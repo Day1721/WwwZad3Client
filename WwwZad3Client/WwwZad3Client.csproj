@@ -192,6 +192,13 @@
     <Content Include="node_modules\angular-local-storage\package.json" />
     <Content Include="node_modules\angular-local-storage\README.md" />
     <Content Include="node_modules\angular-local-storage\test\.jshintrc" />
+    <Content Include="node_modules\angular-google-chart\.editorconfig" />
+    <Content Include="node_modules\angular-google-chart\.npmignore" />
+    <Content Include="node_modules\angular-google-chart\bower.json" />
+    <Content Include="node_modules\angular-google-chart\CHANGELOG.md" />
+    <Content Include="node_modules\angular-google-chart\CONTRIBUTING.md" />
+    <Content Include="node_modules\angular-google-chart\package.json" />
+    <Content Include="node_modules\angular-google-chart\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -200,10 +207,50 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Navbar.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="Index.html" />
     <Content Include="node_modules\angular-cookies\angular-cookies.js" />
     <Content Include="node_modules\angular-cookies\angular-cookies.min.js" />
     <Content Include="node_modules\angular-cookies\index.js" />
+    <Content Include="node_modules\angular-google-chart\Gruntfile.js" />
+    <Content Include="node_modules\angular-google-chart\images\logo\AGC-Logo-100x100.png" />
+    <Content Include="node_modules\angular-google-chart\images\logo\AGC-Logo-200x200.png" />
+    <Content Include="node_modules\angular-google-chart\images\logo\AGC-Logo-500x500.png" />
+    <Content Include="node_modules\angular-google-chart\images\logo\AGC-Logo.svg" />
+    <Content Include="node_modules\angular-google-chart\index.html" />
+    <Content Include="node_modules\angular-google-chart\karma.conf.js" />
+    <Content Include="node_modules\angular-google-chart\ng-google-chart.js" />
+    <Content Include="node_modules\angular-google-chart\ng-google-chart.min.js" />
+    <Content Include="node_modules\angular-google-chart\partials\annotation.html" />
+    <Content Include="node_modules\angular-google-chart\partials\annotation.js" />
+    <Content Include="node_modules\angular-google-chart\partials\fat.html" />
+    <Content Include="node_modules\angular-google-chart\partials\fat.js" />
+    <Content Include="node_modules\angular-google-chart\partials\gauge.html" />
+    <Content Include="node_modules\angular-google-chart\partials\gauge.js" />
+    <Content Include="node_modules\angular-google-chart\partials\generic.html" />
+    <Content Include="node_modules\angular-google-chart\partials\generic.js" />
+    <Content Include="node_modules\angular-google-chart\sample.js" />
+    <Content Include="node_modules\angular-google-chart\src\agcBeforeDraw.js" />
+    <Content Include="node_modules\angular-google-chart\src\agcOnClick.js" />
+    <Content Include="node_modules\angular-google-chart\src\agcOnError.js" />
+    <Content Include="node_modules\angular-google-chart\src\agcOnMouseout.js" />
+    <Content Include="node_modules\angular-google-chart\src\agcOnMouseover.js" />
+    <Content Include="node_modules\angular-google-chart\src\agcOnReady.js" />
+    <Content Include="node_modules\angular-google-chart\src\agcOnSelect.js" />
+    <Content Include="node_modules\angular-google-chart\src\FormatManager.js" />
+    <Content Include="node_modules\angular-google-chart\src\googleChart.js" />
+    <Content Include="node_modules\angular-google-chart\src\googlechart.module.js" />
+    <Content Include="node_modules\angular-google-chart\src\googleChartApiConfig.js" />
+    <Content Include="node_modules\angular-google-chart\src\googleChartApiPromise.js" />
+    <Content Include="node_modules\angular-google-chart\src\GoogleChartController.js" />
+    <Content Include="node_modules\angular-google-chart\src\googleChartService.js" />
+    <Content Include="node_modules\angular-google-chart\src\googleJsapiUrl.js" />
+    <Content Include="node_modules\angular-google-chart\style.css" />
+    <Content Include="node_modules\angular-google-chart\test\google.mock.js" />
+    <Content Include="node_modules\angular-google-chart\test\googleChartApiPromise.spec.js" />
+    <Content Include="node_modules\angular-google-chart\test\googleChartService.spec.js" />
+    <Content Include="node_modules\angular-google-chart\test\googleJsapiUrl.spec.js" />
     <Content Include="node_modules\angular-local-storage\.gitattributes" />
     <Content Include="node_modules\angular-local-storage\demo\demo-app.js" />
     <Content Include="node_modules\angular-local-storage\demo\demo-style.css" />
@@ -362,16 +409,26 @@
     <Content Include="node_modules\jquery\src\var\support.js" />
     <Content Include="node_modules\jquery\src\var\toString.js" />
     <Content Include="node_modules\jquery\src\wrap.js" />
+    <Content Include="Scripts\AmbitEditCtrl.js" />
     <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\IndexCtrl.js" />
+    <Content Include="Scripts\LoginCtrl.js" />
+    <Content Include="Scripts\LogoutCtrl.js" />
+    <Content Include="Scripts\SearchCtrl.js" />
+    <Content Include="Scripts\SubpageCtrl.js" />
+    <Content Include="Scripts\VoivodeshipCtrl.js" />
+    <Content Include="Views\AmbitEdit.html" />
+    <Content Include="Views\Index.html" />
+    <Content Include="Views\Login.html" />
+    <Content Include="Views\LoginPartial.html" />
+    <Content Include="Views\Search.html" />
+    <Content Include="Views\Subpage.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\" />
-    <Folder Include="Views\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -1,0 +1,40 @@
+﻿<nav><h2>{{data.root}}</h2></nav>
+<section class="mainSection">
+    <table>
+        <tr>
+            <td>Kandydat</td>
+            <td>Głosy</td>
+            <td>Wynik</td>
+            <td>Kolor</td>
+        </tr>
+        <tr ng-repeat="cand in data.summary">
+            <td>{{ cand.name }}</td>
+            <td>{{ cand.votes }}</td>
+            <td>{{ cand.result | number:2 }}%</td>
+            <td><div class="box cand{{ cand.id }}-color"></div></td>
+        </tr>
+    </table>
+</section>
+<section class="secondSection">
+    <h3>{{ data.another }}</h3>
+    <table>
+        <tr>
+            <th>{{ data.subunitName }}</th>
+            <th>Głosy</th>
+            <th>Proporcja</th>
+        </tr>
+        <tr ng-repeat="row in data.rows">
+            <td>
+                <p ng-if="data.isLast">{{ row.name }} <a href="/#/ambit/{{ row.link }}">Edycja</a></p>
+                
+                <a ng-if="!data.isLast" href="/#/{{ data.anotherFolder }}/{{ row.link }}">{{row.name}}</a>
+            </td>
+            <td>{{ row.total }}</td>
+            <td><div class="horizontal-bar">
+                <div ng-repeat="cand in row.cands" class="cand{{ cand.id }}-color floating" style="width: {{ cand.result }}%"></div>
+            </div></td>
+        </tr>
+    </table>
+</section>
+
+<div class="loader" ng-show="isLoading"></div>

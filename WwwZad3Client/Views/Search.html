@@ -1,0 +1,24 @@
+﻿<h3>Wyszukiwarka gmin</h3>
+
+<form ng-submit="search()">
+<div class="form-group">
+    <label for="commune-name">Nazwa gminy:</label>
+    <input ng-model="communeName" 
+           type="text"
+           id="commune-name"
+           class="form-control"
+           required />
+    
+    <input class="btn btn-primary"
+           ng-click="search()"
+           type="submit"
+           value="Wyszukaj">
+    
+</div>
+</form>
+
+<ul>
+    <li ng-repeat="row in list">
+        <a href="/#/commune/{{ row.id }}">{{ row.name }} ({{ row.voivodeship }})</a>
+    </li>
+</ul>

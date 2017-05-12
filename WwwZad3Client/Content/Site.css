@@ -1,0 +1,191 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    background-color: cyan;
+    border: 1px green;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+section {
+    margin: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.box {
+    height: 1em;
+    width: 4em;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+.horizontal-bar {
+    width: 70%;
+    background-color: white;
+    height: 1em;
+}
+
+    .horizontal-bar div {
+        height: 1em;
+    }
+
+@media only screen and (min-width: 700px) {
+    aside {
+        float: right;
+        width: 40%;
+        margin: 10px;
+    }
+
+    .indexMain {
+        width: 60%;
+        margin: 10px;
+    }
+}
+
+#map {
+    display: flex;
+}
+
+.floating {
+    float: left;
+}
+
+.auth {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+header a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.search-link {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.loader {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.col1 {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    border: none;
+}
+
+.col2 {
+    float: right;
+    height: 20px;
+    border: none;
+}
+
+.cand1-color {
+    background-color: gold;
+}
+
+.cand2-color {
+    background-color: brown;
+}
+
+.cand3-color {
+    background-color: green;
+}
+
+.cand4-color {
+    background-color: #663399; /* rebeccapurple */
+}
+
+.cand5-color {
+    background-color: darkred;
+}
+
+.cand6-color {
+    background-color: darkslategray;
+}
+
+.cand7-color {
+    background-color: black;
+}
+
+.cand8-color {
+    background-color: indianred;
+}
+
+.cand9-color {
+    background-color: springgreen;
+}
+
+.cand10-color {
+    background-color: mediumslateblue;
+}
+
+.cand11-color {
+    background-color: indigo;
+}
+
+.cand12-color {
+    background-color: blue;
+}

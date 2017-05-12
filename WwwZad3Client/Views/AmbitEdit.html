@@ -1,0 +1,25 @@
+﻿<form ng-submit="push()" class="form-horizontal">
+    
+        <ul class="list-unstyled">
+            <li ng-repeat="pair in data">
+                <div class="form-group">
+                    <label class="control-label col-sm-2"
+                           for="{{pair.candidate}}">
+                        {{pair.candidate}}
+                    </label>
+                    <div class="col-sm-10">
+                    <input class="form-control"
+                           id="{{pair.candidate}}"
+                           name="{{pair.candidate}}"
+                           ng-model="result[pair.candidate]"
+                           type="number"
+                           required>
+                    </div>
+                </div>
+            </li>
+
+            <li><input class="btn btn-primary"
+                       type="submit"/></li>
+        </ul>
+    
+</form>

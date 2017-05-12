@@ -6,6 +6,7 @@
   "dependencies": {
     "angular": "^1.6.4",
     "angular-cookies": "^1.6.4",
+    "angular-google-chart": "^0.1.0",
     "angular-local-storage": "^0.5.2",
     "angular-route": "^1.6.4",
     "bootstrap": "^3.3.7",
