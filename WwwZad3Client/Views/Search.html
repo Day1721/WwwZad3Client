@@ -17,8 +17,12 @@
 </div>
 </form>
 
-<ul>
+<ul ng-if="list.length > 0">
     <li ng-repeat="row in list">
         <a href="/#/commune/{{ row.id }}">{{ row.name }} ({{ row.voivodeship }})</a>
     </li>
 </ul>
+
+<p ng-if="list.length === 0">Brak pasująch gmin.</p>
+
+<div class="loader" ng-show="isLoading"></div>

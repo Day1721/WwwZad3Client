@@ -12,6 +12,10 @@
     color: rgb(191, 187, 187);
 }
 
+#nav-username {
+    color: white
+}
+
 #my-navbar.navbar-default .navbar-nav > li > a:hover,
 #my-navbar.navbar-default .navbar-nav > li > a:focus {
     color: white;
@@ -20,13 +24,14 @@
 #my-navbar.navbar-default .navbar-nav > .active > a,
 #my-navbar.navbar-default .navbar-nav > .active > a:hover,
 #my-navbar.navbar-default .navbar-nav > .active > a:focus {
-    color: rgb(87, 87, 87);
+    color: rgb(100, 100, 100);
     background-color: rgb(231, 231, 231);
 }
 
 #my-navbar.navbar-default .navbar-toggle {
     border-color: #ddd;
 }
+
 
 #my-navbar.navbar-default .navbar-toggle:hover,
 #my-navbar.navbar-default .navbar-toggle:focus {

@@ -5,9 +5,9 @@
         .module('app')
         .controller('LoginCtrl', loginCtrl);
 
-    loginCtrl.$inject = ['$scope', '$cookies', '$http', '$rootScope', '$location'];
+    loginCtrl.$inject = ['$scope', '$cookies', '$http', '$rootScope', '$window'];
 
-    function loginCtrl($scope, $cookies, $http, $rootScope, $location) {
+    function loginCtrl($scope, $cookies, $http, $rootScope, $window) {
         $scope.title = 'LoginCtrl';
 
         $rootScope.isLogged = false;
@@ -30,9 +30,8 @@
                     $cookies.put('username', $scope.username);
                     $rootScope.username = $scope.username;
                     $rootScope.isLogged = true;
-                    
-                    $location.path('/');
-                    $location.replace();
+
+                    $window.history.back();
                 },
                 errorResponse => {
                     if (errorResponse.status === 400)

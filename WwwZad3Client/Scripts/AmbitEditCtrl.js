@@ -8,6 +8,11 @@
     ambitEditCtrl.$inject = ['$scope', '$routeParams', '$location', '$http'];
 
     function ambitEditCtrl($scope, $routeParams, $location, $http) {
+        if (!$scope.isLogged) {
+            $location.path('/login');
+            $location.replace();
+        }
+
         $scope.title = 'AmbitEditCtrl';
         $scope.result = {};
 
@@ -21,7 +26,8 @@
                 });
             },
             errorResponse => {
-
+                $location.path('/login');
+                $location.replace();
             });
 
         $scope.push = function() {
@@ -31,14 +37,17 @@
                 data: $scope.result
             }).then(
                 successResponse => {
+                    $window.history.back();
+/*
                     $location.path('/');
                     $location.replace();
+*/
                 },
                 errorResponse => {
                     if (errorResponse.status === 400) {
-                        alert(errorResponse.data.message);
+                        alert('Część danych jes niepoprawna.');
                     }
-                    //TODO WTFISWH
+                    else alert('Wystąpił błąd, spróbuj ponownie później.');
                 });
         };
     }

@@ -3,15 +3,15 @@
 
     const submodules = ['ngRoute', 'ngCookies', 'LocalStorageModule', 'googlechart'];
 
-    const app = angular.module('app', submodules);
-
-    app.config(configFunc);
-    app.run(runFunc);
+    angular
+        .module('app', submodules)
+        .config(configFunc)
+        .run(runFunc);
 
     runFunc.$inject = ['$rootScope', '$cookies'];
 
     function runFunc($rootScope, $cookies) {
-        $rootScope.serverUrl = 'http://localhost:8001'; //here it can be changed
+        $rootScope.serverUrl = 'http://localhost:8001'; //here server url can be changed
         $rootScope.loginPath = '/Views/LoginPartial.html';
 
         $rootScope.username = $cookies.get('username');
